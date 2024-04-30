@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DrEureka: Language Model Guided Sim-To-Real Transfer</title>
+    <title>DrEureka | Language Model Guided Sim-To-Real Transfer</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -25,42 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        .container-vis {
-            display: block; /* Change the container display to block */
-        }
-
-        .left-container-vis {
-            float: left; /* Float the left container to the left */
-            width: 20%; /* Set the width of the left container to 20% */
-            padding: 10px;
-        }
-
-        .right-container-vis {
-            overflow-y: auto; /* Enable vertical scrollbar for the right container */
-            max-height: 90vh; /* Set a maximum height for the right container to make it scrollable */
-        }
-
-        .image-container-vis {
-            width: calc(25% - 20px); /* Sets the width of each image container to 25% (4 images per row) */
-            margin: 10px; /* Adds some spacing between images */
-            float: left; /* Float the image containers to the left */
-            text-align: center; /* Center the content within each image container */
-        }
-
-        /* Set a maximum width for the images */
-        .image-container-vis img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Center the captions within the image containers */
-        .image-container-vis p {
-            margin: 0; /* Remove default margin */
-        }
-    </style>
 </head>
 
 <body>
@@ -76,7 +40,7 @@
 
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <a target="_blank" href="https://www.seas.upenn.edu/~jasonyma/">
+                                <a target="_blank" href="https://jasonma2016.github.io/">
                                     Jason&#160;Ma*</a>
                                     <a href="mailto:jasonyma@seas.upenn.edu">
                                         <span class="icon">
@@ -87,7 +51,9 @@
                                 <a target="_blank"
                                     href="https://www.seas.upenn.edu/~wjhliang/">William&#160;Liang*</a><sup>1</sup>,
                                 <a target="_blank"
-                                    href="https://www.seas.upenn.edu/~wjhliang/">Hungju&#160;Wang</a><sup>1</sup>,
+                                    href="https://www.linkedin.com/in/hungju-wang">Hungju&#160;Wang</a><sup>1</sup>,
+                                    <a target="_blank"
+                                    href="https://www.linkedin.com/in/hungju-wang">Sam&#160;Wang</a><sup>1</sup>,
                                 <br>
                                 <a target="_blank" href="https://www.cs.utexas.edu/~yukez/">Yuke&#160;Zhu</a><sup>2</sup>,
                                 <a target="_blank" href="https://jimfan.me/">Linxi&#160;"Jim"&#160;Fan</a><sup>2</sup>,
@@ -124,7 +90,7 @@
                                         <span class="icon">
                                             <i class="fa fa-envelope"></i>
                                         </span>
-                                Corresponding authors: jasonyma@seas.upenn.edu
+                                Corresponding authors: jasonyma@seas.upenn.edu, wjhliang@seas.upenn.edu
                             </span>
                             </div>
 
@@ -149,49 +115,14 @@
                                         </span>
                                         <span><b>PDF</b></span>
                                     </a>
-                                    <!-- <a target="_blank" href=""
+                                    <a target="_blank" href=""
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
-                                        <span>Code</span>
-                                    </a> -->
-                                    <a target="_blank" href="visualizer"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fas fa-database"></i>
-                                        </span>
-                                        <span><b>Dataset Visualizer</b></span>
-                                    </a>
-                                    <a target="_blank" href="https://colab.research.google.com/drive/1b4PPH4XGht4Jve2xPKMCh-AXXAQziNQa?usp=sharing"
-                                    class="external-link button is-normal is-rounded is-dark">
-                                    <span class="icon">
-                                        <i class="fas fa-database"></i>
-                                    </span>
-                                    <span><b>Dataset Colab</b></span>
-                                    </a>
-                                    <a target="_blank" href="https://droid-dataset.github.io/droid/"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                        <span><b>Setup Guide</b></span>
-                                    </a>
-                                    <a target="_blank" href="https://github.com/droid-dataset/droid"
-                                    class="external-link button is-normal is-rounded is-dark">
-                                    <span class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span><b>Hardware Code</b></span>
+                                        <span><b>Code</b></span>
                                     </a>
 
-                                    <a target="_blank" href="https://github.com/droid-dataset/droid_policy_learning"
-                                    class="external-link button is-normal is-rounded is-dark">
-                                    <span class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span><b>Policy Learning Code</b></span>
-                                    </a>
                                 </span>
                             </div>
 
@@ -211,48 +142,14 @@
             </div> -->
             <div>
                 <video poster="" id="" autoplay controls muted loop width="100%" playbackRate=2.0 style="border-radius: 5px;">
-                    <source src="videos/droid_teaser_animated.m4v" type="video/mp4">
+                    <source src="videos/dreureka_teaser.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
     </section>
     <br>
     <br>
-    <div class="container is-max-widescreen">
-        <h1><b>Getting Started</b></h1>
-        <div class="columns">
-            <div class="column has-text-centered">
-                <a href="visualizer">
-                <p style="font-size: 200%"><b>Interactive Dataset Visualizer <br> </b></p>
-                </a>
-                <video poster="" id="" autoplay controls muted loop height="50%" playbackRate=2.0 style="border-radius: 5px;">
-                    <!-- <source src="videos/droid_scene_videos/8x8_video_width_240_fps_10_duration_20_shuffle.mp4" type="video/mp4"> -->
-                    <source src="videos/dataset-visualizer.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="column">
-                <p class="center-text" style="font-size: 200%"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Dataset Quickstart </b>
-                    <a href="https://colab.research.google.com/drive/1b4PPH4XGht4Jve2xPKMCh-AXXAQziNQa?usp=sharing"> 
-                        <b>(Colab) </b>
-                        </a>
-                </p>
-                <pre><code>import tensorflow_datasets as tfds     
 
-ds = tfds.load("droid", 
-&nbsp;&nbsp;&nbsp;&nbsp;data_dir="gs://gresearch/robotics", split="train")
-
-for episode in ds.take(5):
-&nbsp;&nbsp;&nbsp;&nbsp;for step in episode["steps"]:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image = step["observation"]["exterior_image_1_left"]
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wrist_image = step["observation"]["wrist_image_left"]
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;action = step["action"]
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction = step["language_instruction"]</code></pre>
-              </div>
-        </div>  
-    </div>
-        <br>
-        <br>
-    </div>
     <section class="section">
         <div class="container is-max-desktop">
             <!-- Abstract. -->
@@ -269,150 +166,89 @@ for episode in ds.take(5):
     </section>
     
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-        // Function to update and display the image count
-        function updateImageCount() {
-            var count = $(".image-grid .filter:visible").length;
-            $("#imageCount").text(count);
-        }
-
-        // Function to filter images based on selected filters
-        function filterImages() {
-            var selectedSceneFilters = $(".scene-filter:checked").map(function() {
-                return $(this).data("filter");
-            }).get();
-
-            var selectedObjectFilters = $(".object-filter:checked").map(function() {
-                return $(this).data("filter");
-            }).get();
-
-            // Show all images initially
-            $(".image-grid .filter").show();
-
-            // Hide images that don't match the selected filters
-            if (selectedSceneFilters.length > 0) {
-                $(".image-grid .filter").not("." + selectedSceneFilters.join(", .")).hide();
-            }
-
-            if (selectedObjectFilters.length > 0) {
-                $(".image-grid .filter").not("." + selectedObjectFilters.join(", .")).hide();
-            }
-
-            // Update the image count
-            updateImageCount();
-        }
-
-        // Function to update scene checkboxes based on the "All" checkbox
-        function updateSceneCheckboxes() {
-            var allScenesCheckbox = $("#allScenes");
-            var sceneCheckboxes = $(".scene-filter");
-            
-            if (allScenesCheckbox.prop("checked")) {
-                sceneCheckboxes.prop("checked", false);
-            }
-        }
-
-        // Function to update object checkboxes based on the "All" checkbox
-        function updateObjectCheckboxes() {
-            var allObjectsCheckbox = $("#allObjects");
-            var objectCheckboxes = $(".object-filter");
-            
-            if (allObjectsCheckbox.prop("checked")) {
-                objectCheckboxes.prop("checked", false);
-            }
-        }
-
-        // Event listener for the "All" checkbox within the scene group
-        $("#allScenes").change(function() {
-            // Check if none of the other scene options are selected
-            var noneSelected = $(".scene-filter:checked").length === 0;
-
-            // Update the "All" checkbox accordingly
-            if (noneSelected) {
-                $(this).prop("checked", true);
-            }
-
-            // Update scene checkboxes based on the "All" checkbox
-            updateSceneCheckboxes();
-
-            // Filter the images
-            filterImages();
-        });
-
-        // Event listener for the "All" checkbox within the object group
-        $("#allObjects").change(function() {
-            // Check if none of the other object options are selected
-            var noneSelected = $(".object-filter:checked").length === 0;
-
-            // Update the "All" checkbox accordingly
-            if (noneSelected) {
-                $(this).prop("checked", true);
-            }
-
-            // Update object checkboxes based on the "All" checkbox
-            updateObjectCheckboxes();
-
-            // Filter the images
-            filterImages();
-        });
-
-        // Event listener for the scene options
-        $(".scene-filter").change(function() {
-            // Check if any of the scene options are selected
-            var anySceneSelected = $(".scene-filter:checked").length > 0;
-
-            // Update the "All" checkbox accordingly
-            $("#allScenes").prop("checked", !anySceneSelected);
-
-            // Filter the images
-            filterImages();
-        });
-
-        // Event listener for the object filters
-        $(".object-filter").change(function() {
-            // Check if any of the object options are selected
-            var anyObjectSelected = $(".object-filter:checked").length > 0;
-
-            // Update the "All" checkbox accordingly
-            $("#allObjects").prop("checked", !anyObjectSelected);
-
-            // Filter the images
-            filterImages();
-        });
-
-        updateImageCount(); // Initial call to updateImageCount
-        filterImages(); // Initial call to filterImages
-    </script>
-
     <section class="section">
         <div class="container is-max-widescreen">
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
-                        <h2 class="title is-2"><span class="dvima">The DROID Robot Platform</span></h2>
+                        <h2 class="title is-3"><span class="dvima">DrEureka Walking Globe Gallery</span></h2>
+                        <p style="font-size: 125%">
+                        DrEureka policy exhibits impressive robustness in the real-world, adeptly balancing and walking atop a yoga ball under various real-world, un-controlled terrain condition changes and disturbances.   
+                        </p>
                     </div>
-                    <br>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <img src="figures/droid_setup.png" class="interpolation-image" alt=""
-                            style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
-                        </div>    
-                    <!-- <br> -->
-                    <div class="column has-text-centered">
-                    <span style="font-size: 140%">
-                        <br>
-                        DROID uses the same hardware
-                        setup across all 13 institutions to streamline data collection while
-                        maximizing portability and flexibility. The setup consists of a Franka
-                        Panda 7DoF robot arm, two adjustable Zed 2 stereo cameras, a wristmounted Zed Mini stereo camera, and an Oculus Quest 2 headset with
-                        controllers for teleoperation. Everything is mounted on a portable,
-                        height-adjustable desk for quick scene changes.
-                    </span>
                 </div>
+            </div>
+        </div>
+        <!-- <div class="hero is-light is-small"> -->
+        <div>
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <div class="item">
+                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0014_walk_sideway.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item">
+                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0014_height_obstacle.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item">
+                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0014_bridge.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item">
+                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0015_crossroad.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item">
+                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0013_upenn_grass_to_road2.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
-                    
+                </div>
+            </div>
+        </div>
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <p style="font-size: 125%">
+                            We also tried kicking or deflating the ball; DrEureka policy is robust to these disturbances and can recover from them!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hero-body">
+                <div class="container">
+                    <div id="results-carousel" class="carousel results-carousel">
+                        <div class="item">
+                            <video poster="" id=""  controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/kick/C0020_clip1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item">
+                            <video poster="" id=""  controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/kick/C0021_clip1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item">
+                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/kick/C0021_clip2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="item">
+                            <video poster="" id=""  controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/kick/C0020_clip2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -423,152 +259,66 @@ for episode in ds.take(5):
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
-                        <h2 class="title is-2"><span class="dvima">DROID Dataset Analysis</span></h2>
+                        <h2 class="title is-3"><span class="dvima">DrEureka Rewards, DR parameters, and Policies (TODO; Fix this section)</span></h2>
+                        <p style="font-size: 125%">
+                            In this demo, we visualize the unmodified best DrEureka reward and DR parameters
+                            for each
+                            task and visualize the policy deployed in the training simulation environment as well as the real-world environment.
+                        </p>
                     </div>
-                    <br>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <img src="figures/droid_viewpoint_distribution.png" class="interpolation-image" alt=""
-                        style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
-                        <br>
-                        <span style="font-size: 125%">
-                            <span style="font-weight: bold">Third-person camera viewpoints in DROID (subsampled).</span>
-                            DROID episodes cover a total of 1417 camera viewpoints along
-                            with intrinsic and extrinsic stereo camera calibration. Brighter colors
-                            indicate regions of higher viewpoint density.
-                        </span> 
-                        </div>
-                        <div class="column has-text-centered">
-                            <img src="figures/droid_interaction_points.png" class="interpolation-image" alt=""
-                            style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                </div>
+            </div>
+            <br>
+            <div class="columns" style="align-items: end;">
+                <div class="column is-half">
+                                       <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="videos/tasks/walking_globe.png" width="18%" style="border-radius: 5px;" alt='<b>Walking Globe</b>, best DrEureka reward and DR parameters:
+                        [sep]
+                        assets/reward_functions/walking_globe.txt [sep] assets/domain_randomizations/walking_globe.txt' onclick="populateDemo(this, 1);">
 
-                            <span style="font-size: 125%">
-                                <span style="font-weight: bold">Visualization of 3D interaction points relative to the robot
-                                    base.</span>
-                                    We visualize the 3D location at which the gripper first closes in
-                                    each trajectory, since closing the gripper often indicates meaningful
-                                    object interactions. DROID’s interactions cover a larger part of the
-                                    robot’s workspace, since the robot is moved freely between collection
-                                    sessions instead of being placed in front of repetitive tabletop scenes.
-                            </span>
-                        </div>
                     </div>
-                    <!-- <img src="figures/droid_viewpoint_distribution.png" class="interpolation-image" alt=""
-                    style="display: block; width: 60%; margin-left: auto; margin-right: auto" />
-                    <br>
-                    <span style="font-size: 125%">
-                        <span style="font-weight: bold">Third-person camera viewpoints in DROID (subsampled).</span>
-                        DROID episodes cover a total of 1417 camera viewpoints along
-                        with intrinsic and extrinsic stereo camera calibration. Brighter colors
-                        indicate regions of higher viewpoint density.
-                    </span>
-                    <br>
-                    <br>
-                    <img src="figures/droid_interaction_points.png" class="interpolation-image" alt=""
-                    style="display: block; width: 60%; margin-left: auto; margin-right: auto" />
-                    <br>
-                    <span style="font-size: 125%">
-                        <span style="font-weight: bold">Visualization of 3D interaction points relative to the robot
-                            base.</span>
-                            We visualize the 3D location at which the gripper first closes in
-                            each trajectory, since closing the gripper often indicates meaningful
-                            object interactions. DROID’s interactions cover a larger part of the
-                            robot’s workspace, since the robot is moved freely between collection
-                            sessions instead of being placed in front of repetitive tabletop scenes.
-                    </span>
-                    <br>
-                    <br> -->
-                    <img src="figures/scene_distribution.png" class="interpolation-image" alt=""
-                    style="display: block; width: 50%; margin-left: auto; margin-right: auto" />
-                    <br>
-                    <span style="font-size: 125%">
-                        <span style="font-weight: bold">Number of scenes per scene type.</span> DROID has an order of
-                        magnitude more scenes than other large robot manipulation datasets,
-                        spanning a much wider range of scene types. 
-                    </span>
-                    <br>
-                    <!-- <div class="container">
-                        <div id="results-carousel" class="carousel results-carousel">
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="200%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_bathroom_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_bedroom_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_closet_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_dining_room_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_industrial_office_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_kitchen_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_laboratory_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_laundry_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                            <div class="item">
-                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                    <source src="videos/droid_scene_videos/scene_type_living_room_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                        </div> -->
+                </div>
+                <div class="row border rounded" style="padding-top:12px; padding-bottom:12px;">
+                    <div class="col-md-6">
+                        <video id="demo-video-1" style="border-radius: 5px;" autoplay loop muted webkit-playsinline
+                            playsinline onclick="setAttribute('controls', 'true');">
+                            <source id="expandedImg-1" src="videos/placeholder.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <br>
-                    <img src="figures/droid_verb_objects_highres.png" class="interpolation-image" alt=""
-                    style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
-                    <br>
-                    <span style="font-size: 125%">
-                        <span style="font-weight: bold">Distribution of verbs and objects in DROID</span>
-                        <b>Top:</b> Distribution of skills in DROID.
-                        DROID features a long tail of diverse verb classes that is only matched by Bridge V2, while the RH20T and RT-1
-                        datasets have a more constrained set of skills.
-                         <b>Bottom</b>: Distribution of interacted objects in DROID, grouped by category. The robot interacts with a wide range of everyday objects.
-                    </span>
-                    <!-- <br>
-                    <br>
-                    <img src="figures/object_distribution.png" class="interpolation-image" alt=""
-                    style="display: block; width: 90%; margin-left: auto; margin-right: auto" />
-                    <br>
-                    <span style="font-size: 125%">
-                        <span style="font-weight: bold">Distribution of interacted objects in DROID,</span> grouped by category. The robot interacts with a wide range of everyday objects.
-                    </span>
-                    <br>
-                    <br>
-                    <img src="figures/verb_distributions.png" class="interpolation-image" alt=""
-                    style="display: block; width: 90%; margin-left: auto; margin-right: auto" />
-                    <br>
-                    <span style="font-size: 125%">
-                        <span style="font-weight: bold">Distribution of skills in DROID.</span>
-                        DROID features a long tail of diverse verb classes that is only matched by Bridge V2, while the RH20T and RT-1
-                        datasets have a more constrained set of skills.
-                    </span> -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="imgtext-1" style="font-size: 1.5em">Select an image above:</div>
+                <div>
+                    <pre
+                        class="p-1"><code class="language-python" id="answer-1">DrEureka responses shown within code block.</code></pre>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvima">DrEureka Components</span></h2>
+
+                        <!-- <img src="assets/images/eureka.png" class="interpolation-image" alt=""
+                            style="display: block; margin-left: auto; margin-right: auto" />
+                        <br> -->
+                        <div class="columns is-centered has-text-centered">
+                        <video poster="" id="" autoplay controls muted width="90%" playbackRate=2.0 style="border-radius: 5px;">
+                            <source src="videos/overview.mp4" type="video/mp4">
+                        </video>
+                        </div>
+                        <span style="font-size: 125%"><b>Overview.</b> TODO.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
 
 
 
@@ -579,211 +329,10 @@ for episode in ds.take(5):
                     <div class="row is-full-width">
                         <h2 class="title is-2"><span class="dvima">Experiments</span></h2>
                         <p style="font-size: 125%">
-                            We investigate whether DROID 
-                            can be used to boost policy performance and robustness across
-                            a wide spectrum of robot manipulation tasks and environments.
-                            To this end, we train policies across 6 tasks in 4 different
-                            locations including lab, office, and household settings, to reflect
-                            the diversity of real world robotic research use cases.
-                            All experiments use representative, state of the art robot policy
-                            learning approaches. Across the board, we find that DROID
-                            improves policy success rate while increasing robustness to
-                            scene changes like distractors or novel object instances.
+                            TODO.
                         </p>
                     </div>
-
-                    <br>
-                    <br>
-                    <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">Qualitative Comparison</span></h2>
-                        <p style="font-size: 125%">
-                        Qualitatively, we find that policies that leverage DROID
-                        during training are notably smoother and precise than other
-                        comparisons.
-                        </p>
-                    </div>
-                    <br>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>DROID (Ours)</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/cooking_droid_speed.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>Open-X</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/cooking_oxe_speed.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>No Co-Train</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/cooking_narrow_speed.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>DROID (Ours)</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/clean_droid.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>Open-X</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/clean_oxe.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>No Co-Train</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/clean_narrow.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>DROID (Ours)</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/apple_droid.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>Open-X</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/apple_oxe.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>No Co-Train</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/apple_narrow.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>DROID (Ours)</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/chips_droid.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>Open-X</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/chips_oxe.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>No Co-Train</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/chips_narrow.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">Qualitative Comparison (OOD Evaluations)</span></h2>
-                        <p style="font-size: 125%">
-                        We also find policies co-trained with DRIOD to be more robust to distractors and novel object instances.
-                        </p>
-                    </div>
-                    <br>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>DROID (Ours)</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/clean_droid_ood.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>Open-X</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/clean_oxe_ood.mp4" type="video/mp4">
-                                <!-- <source src="videos/oxe_iid_0.mp4" type="video/mp4"> -->
-                                <!-- <source src="videos/droid_eval_videos/clean_narrow_ood.mp4" type="video/mp4"> -->
-
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>No Co-Train</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/clean_narrow_ood.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>DROID (Ours)</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/apple_ood_droid.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>Open-X</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/apple_ood_oxe.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>No Co-Train</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/apple_ood_narrow.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>DROID (Ours)</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/chips_ood_droid.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>Open-X</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/chips_ood_oxe.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="column has-text-centered">
-                            <p style="font-size: 150%"><b>No Co-Train</b></p>
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0 style="border-radius: 5px;">
-                                <source src="videos/droid_eval_videos/chips_ood_narrow.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">Quantitative Comparison</span></h2>
-                        <p style="font-size: 125%">
-                        </p>
-                    </div>
-                    <br>
-                    <img src="figures/droid_eval_setups.png" class="interpolation-image" alt=""
-                    style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
-                    <br>
-                    <span style="font-size: 125%">
-                        <span style="font-weight: bold"> Robot setups for policy evaluation.</span>
-                        We cover a wide range of tasks and scenes, from lab evaluations to offices and real households, to
-                        reflect the diversity of use cases in real robot research.
-                    </span>
-                    <br>
-                    <br>
-                    <img src="figures/cotrain.png" class="interpolation-image" alt=""
-                    style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
-                    <br>
-                    <span style="font-size: 125%">
-                        <span style="font-weight: bold">  Does DROID Improve Policy Performance and Robustness?</span>
-                        We find that across all our evaluation tasks, co-training with DROID
-                        significantly improves both in distribution and OOD performance over both no co-training and co-training with the Open-X dataset. We
-                        compare success rate averaged across all tasks with standard error, and find DROID outperforms the next best method by <b>22%</b> absolute
-                        success rate in-distribution and by <b>17%</b> out of distribution.
-                    </span>
-                    <br>
                 </div>
-
             </div>
         </div>
     </section>
@@ -794,9 +343,9 @@ for episode in ds.take(5):
 <section class="section" id="BibTeX">
     <div class="container is-max-widescreen content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@article{khazatsky2024droid,
-    title   = {DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset},
-    author  = {Alexander Khazatsky and Karl Pertsch and Suraj Nair and Ashwin Balakrishna and Sudeep Dasari and Siddharth Karamcheti and Soroush Nasiriany and Mohan Kumar Srirama and Lawrence Yunliang Chen and Kirsty Ellis and Peter David Fagan and Joey Hejna and Masha Itkina and Marion Lepert and Yecheng Jason Ma and Patrick Tree Miller and Jimmy Wu and Suneel Belkhale and Shivin Dass and Huy Ha and Arhan Jain and Abraham Lee and Youngwoon Lee and Marius Memmel and Sungjae Park and Ilija Radosavovic and Kaiyuan Wang and Albert Zhan and Kevin Black and Cheng Chi and Kyle Beltran Hatch and Shan Lin and Jingpei Lu and Jean Mercat and Abdul Rehman and Pannag R Sanketi and Archit Sharma and Cody Simpson and Quan Vuong and Homer Rich Walke and Blake Wulfe and Ted Xiao and Jonathan Heewon Yang and Arefeh Yavary and Tony Z. Zhao and Christopher Agia and Rohan Baijal and Mateo Guaman Castro and Daphne Chen and Qiuyu Chen and Trinity Chung and Jaimyn Drake and Ethan Paul Foster and Jensen Gao and David Antonio Herrera and Minho Heo and Kyle Hsu and Jiaheng Hu and Donovon Jackson and Charlotte Le and Yunshuang Li and Kevin Lin and Roy Lin and Zehan Ma and Abhiram Maddukuri and Suvir Mirchandani and Daniel Morton and Tony Nguyen and Abigail O'Neill and Rosario Scalise and Derick Seale and Victor Son and Stephen Tian and Emi Tran and Andrew E. Wang and Yilin Wu and Annie Xie and Jingyun Yang and Patrick Yin and Yunchu Zhang and Osbert Bastani and Glen Berseth and Jeannette Bohg and Ken Goldberg and Abhinav Gupta and Abhishek Gupta and Dinesh Jayaraman and Joseph J Lim and Jitendra Malik and Roberto Martín-Martín and Subramanian Ramamoorthy and Dorsa Sadigh and Shuran Song and Jiajun Wu and Michael C. Yip and Yuke Zhu and Thomas Kollar and Sergey Levine and Chelsea Finn},
+        <pre><code>@article{ma2024dreureka,
+    title   = {DrEureka: Language Model Guided Sim-To-Real Transfer},
+    author  = {Yecheng Jason Ma and William Liang and Hungju Wang and Yuke Zhu and Linxi Fan and Osbert Bastani and Dinesh Jayaraman}
     year    = {2024},
 }
 </code></pre>

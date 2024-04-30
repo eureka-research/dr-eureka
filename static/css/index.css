@@ -89,11 +89,11 @@ body {
     font-weight: bolder;
 }
 
-/* .publication-authors {
-} */
+.publication-authors {
+}
 
 .publication-authors a {
-    color: hsl(120, 10%, 8%) !important;
+    color: hsl(121, 100%, 36%) !important;
 }
 
 .conference-authors a {
@@ -112,7 +112,7 @@ body {
 }
 
 .publication-authors {
-    /* color: #4286f4; */
+    /*color: #4286f4;*/
 }
 
 .publication-video {
