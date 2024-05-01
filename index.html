@@ -396,14 +396,14 @@
 
     function populateDemo(imgs, num) {
         // Get the expanded image
-        var expandImgReal = document.getElementById("expandedImg-" + num);
+        var expandImg = document.getElementById("expandedImg-" + num);
         var expandImgSim = document.getElementById("expandedImg-" + (num+1));
         // Get the image text
         var imgText = document.getElementById("imgtext-" + num);
         var answer = document.getElementById("answer-" + num);
 
         // Use the same src in the expanded image as the image being clicked on from the grid
-        expandImgReal.src = imgs.src.replace(".png", ".mp4");
+        expandImg.src = imgs.src.replace(".png", ".mp4");
         expandImgSim.src = imgs.src.split(".png")[0] + "_sim.mp4";
         var videoReal = document.getElementById('demo-video-' + num);
         // or video = $('.video-selector')[0];
@@ -419,7 +419,6 @@
         videoSim.play();
         videoSim.removeAttribute('controls');
 
-        console.log(expandImgReal.src);
 
         console.log(expandImg.src);
         // Use the value of the alt attribute of the clickable image as text inside the expanded image
@@ -433,6 +432,7 @@
         }
 
         // NOTE (wliang): Modified from original to read from file instead
+        console.log("Fetching text from:", qa[1]);
         fetch(qa[1])
             .then(response => response.text())
             .then(contents => {
@@ -441,6 +441,43 @@
             })
             .catch(error => console.error('Error reading file:', error));
     }
+
+    // function populateDemo(imgs, num) {
+    //     // Get the expanded image
+    //     var expandImg = document.getElementById("expandedImg-" + num);
+    //     // Get the image text
+    //     var imgText = document.getElementById("imgtext-" + num);
+    //     var answer = document.getElementById("answer-" + num);
+
+    //     // Use the same src in the expanded image as the image being clicked on from the grid
+    //     expandImg.src = imgs.src.replace(".png", ".mp4");
+    //     var video = document.getElementById('demo-video-' + num);
+    //     // or video = $('.video-selector')[0];
+    //     video.pause()
+    //     video.load();
+    //     video.play();
+    //     video.removeAttribute('controls');
+
+    //     console.log(expandImg.src);
+    //     // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    //     var qa = imgs.alt.split("[sep]");
+    //     imgText.innerHTML = qa[0];
+    //     answer.innerHTML = "";
+    //     // Show the container element (hidden with CSS)
+    //     expandImg.parentElement.style.display = "block";
+    //     for (timeoutId of timeoutIds) {
+    //         clearTimeout(timeoutId);
+    //     }
+
+    //     // NOTE (wliang): Modified from original to read from file instead
+    //     fetch(qa[1])
+    //         .then(response => response.text())
+    //         .then(contents => {
+    //             // Call the processData function and pass the contents as an argument
+    //             typeWriter(contents, 0, qa[0], num);
+    //         })
+    //         .catch(error => console.error('Error reading file:', error));
+    // }
 
     function typeWriter(txt, i, q, num) {
         var imgText = document.getElementById("imgtext-" + num);
