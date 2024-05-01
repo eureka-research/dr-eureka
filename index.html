@@ -291,7 +291,7 @@
                     <div class="row border rounded" style = "display:flex; height: 20em;  overflow: hidden;">
                         <video id="demo-video-1" style="border-radius: 5px;  object-fit: cover;" autoplay loop muted webkit-playsinline
                             playsinline onclick="setAttribute('controls', 'true');">
-                            <source id="expandedImg-1" src="videos/placeholder.mp4" type="video/mp4">
+                            <source id="expandedImg-1"  type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -397,7 +397,7 @@
     function populateDemo(imgs, num) {
         // Get the expanded image
         var expandImgReal = document.getElementById("expandedImg-" + num);
-        var expandImgSim = document.getElementById("expandedImg-" + num+1);
+        var expandImgSim = document.getElementById("expandedImg-" + (num+1));
         // Get the image text
         var imgText = document.getElementById("imgtext-" + num);
         var answer = document.getElementById("answer-" + num);
