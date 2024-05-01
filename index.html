@@ -270,28 +270,36 @@
             </div>
             <br>
             <div class="columns" style="align-items: end;">
-                <div class="column is-half">
+                <div class="column is-one-fifths">
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="videos/tasks/walking_globe.png" width="18%" style="border-radius: 5px;" alt='<b>Walking Globe</b>, best DrEureka reward and DR parameters:
+                        <img src="videos/tasks/walking_globe.png" width="50%" style="border-radius: 5px;" alt='<b>Walking Globe</b>, best DrEureka reward and DR parameters:
                         [sep]
                         assets/reward_functions/walking_globe.txt [sep] assets/domain_randomizations/walking_globe.txt' onclick="populateDemo(this, 1);">
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="videos/tasks/cube_rotation.png" width="18%" style="border-radius: 5px;" alt='<b>Cube Rotation</b>, best DrEureka reward and DR parameters:
+                        <img src="videos/tasks/cube_rotation.png" width="50%" style="border-radius: 5px;" alt='<b>Cube Rotation</b>, best DrEureka reward and DR parameters:
                         [sep]
                         assets/reward_functions/cube_rotation.txt [sep] assets/domain_randomizations/cube_rotation.txt' onclick="populateDemo(this, 1);">  
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="videos/tasks/forward_locomotion.png" width="18%" style="border-radius: 5px;" alt='<b>Forward Locomotion</b>, best DrEureka reward and DR parameters:
+                        <img src="videos/tasks/forward_locomotion.png" width="50%" style="border-radius: 5px;" alt='<b>Forward Locomotion</b>, best DrEureka reward and DR parameters:
                         [sep]
                         assets/reward_functions/forward_locomotion.txt [sep] assets/domain_randomizations/forward_locomotion.txt' onclick="populateDemo(this, 1);">  
                     </div>
-                </div>
-                <div class="row border rounded" style="padding-top:12px; padding-bottom:12px;">
-                    <div class="col-md-6">
-                        <video id="demo-video-1" style="border-radius: 5px;" autoplay loop muted webkit-playsinline
+                </div> 
+                <div class="column is-two-fifths" style="padding-top:12px; padding-bottom:12px;">
+                    <div class="row border rounded" style = "display:flex; height: 20em;  overflow: hidden;">
+                        <video id="demo-video-1" style="border-radius: 5px;  object-fit: cover;" autoplay loop muted webkit-playsinline
                             playsinline onclick="setAttribute('controls', 'true');">
                             <source id="expandedImg-1" src="videos/placeholder.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="column is-two-fifths" style="padding-top:12px; padding-bottom:12px;">
+                    <div class="row border rounded" style = "display:flex; height: 20em ; overflow: hidden;">
+                        <video id="demo-video-2" style="border-radius: 5px; object-fit: cover;" autoplay loop muted webkit-playsinline
+                            playsinline onclick="setAttribute('controls', 'true');">
+                            <source id="expandedImg-2" src="videos/placeholder.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -388,19 +396,30 @@
 
     function populateDemo(imgs, num) {
         // Get the expanded image
-        var expandImg = document.getElementById("expandedImg-" + num);
+        var expandImgReal = document.getElementById("expandedImg-" + num);
+        var expandImgSim = document.getElementById("expandedImg-" + num+1);
         // Get the image text
         var imgText = document.getElementById("imgtext-" + num);
         var answer = document.getElementById("answer-" + num);
 
         // Use the same src in the expanded image as the image being clicked on from the grid
-        expandImg.src = imgs.src.replace(".png", ".mp4");
-        var video = document.getElementById('demo-video-' + num);
+        expandImgReal.src = imgs.src.replace(".png", ".mp4");
+        expandImgSim.src = imgs.src.split(".png")[0] + "_sim.mp4";
+        var videoReal = document.getElementById('demo-video-' + num);
         // or video = $('.video-selector')[0];
-        video.pause()
-        video.load();
-        video.play();
-        video.removeAttribute('controls');
+        videoReal.pause()
+        videoReal.load();
+        videoReal.play();
+        videoReal.removeAttribute('controls');
+
+        var videoSim = document.getElementById('demo-video-2');
+        // or video = $('.video-selector')[0];
+        videoSim.pause()
+        videoSim.load();
+        videoSim.play();
+        videoSim.removeAttribute('controls');
+
+        console.log(expandImgReal.src);
 
         console.log(expandImg.src);
         // Use the value of the alt attribute of the clickable image as text inside the expanded image
