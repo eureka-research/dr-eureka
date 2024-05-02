@@ -25,7 +25,7 @@ import subprocess
 # import subprocess
 
 # Set the path to the main folder
-main_folder = "/Users/jasonma/dreureka-website/videos/untrimmed"
+main_folder = "/Users/jasonma/dreureka-website/videos/failures"
 
 # Recursively iterate through all subfolders
 for root, dirs, files in os.walk(main_folder):

@@ -1,5 +1,5 @@
-input_folder=videos/comparisons
-output_folder=videos/comparisons
+input_folder=videos/failures
+output_folder=videos/failures
 # Iterate over each MP4 file in the input folder
 for file in "$input_folder"/*.mp4; do
     # Extract the filename without extension
