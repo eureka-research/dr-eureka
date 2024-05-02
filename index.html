@@ -373,13 +373,17 @@
         </div>
         <br>
         <br>
+        
         <div class="container is-max-widescreen">
-
         <div class="rows">
             <div class="rows is-centered ">
                 <div class="row is-full-width">
+                    <h2 class="title is-3"><span class="dvima">Qualitative Comparisons</span></h2>
                     <p style="font-size: 125%">
-                       On the quadrupedal locomotion, we also systematically evaluate DrEureka policies on several real-world terrains and find they remain robust and outperform policies 
+                        We have conducted systematic study on the benchmark quadrupedal locomotion task. Here, we present several qualitative results. See the full paper for details. 
+                     </p>                
+                    <p style="font-size: 125%">
+                       <b>Terrain Robustness.</b> On the quadrupedal locomotion task, we also systematically evaluate DrEureka policies on several real-world terrains and find they remain robust and outperform policies 
                        trained using human-designed reward and DR configurations.
                     </p>
                 </div>
@@ -395,22 +399,69 @@
                     style="display: block; width:89%; margin-left: auto; margin-right: auto" />
                     <br>
                     <span style="font-size: 125%">
-                        <span style="font-weight: bold">The default real-world environment as well as additional environments to test \ourmethod's robustness for quadrupedal locomotion.
+                        <span style="font-weight: bold">The default as well as additional real-world environments to test DrEureka's robustness for quadrupedal locomotion.
                     </span> 
                     </div>
                     <div class="column has-text-centered">
                         <img src="figures/real_world_robustness.png" class="interpolation-image" alt=""
-                        style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                        style="display: block; width: 95%; margin-left: auto; margin-right: auto" />
 
                         <span style="font-size: 125%">
                             <span style="font-weight: bold">DrEureka performs consistently across different terrains and maintains advantages over Human-Designed.
                         </span>
                     </div>
                 </div>
+            </div>
+            <br>
+            <div class="columns is-centered has-text-centered">
+                <video poster="videos/comparisons/dr_eureka_terrains.png" preload="none" id="" controls muted width="90%" playbackRate=2.0 style="border-radius: 5px;">
+                    <source src="videos/comparisons/dr_eureka_terrains.mp4" type="video/mp4">
+                </video>
                 </div>
             </div>
+            <br>
+            <br>
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">    
+                        <p style="font-size: 125%">
+                            <b> DrEureka Safety Instruction.</b>DrEureka's LLM reward design subroutine improves upon Eureka by incorporating safety instructions. We find this to be critical for generating reward functions 
+                            safe enough to be deployed in the real world.
+                         </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+            <div class="columns is-centered has-text-centered">
+                <video poster="videos/comparisons/dr_eureka_safety.png" preload="none" id="" controls muted width="90%" playbackRate=2.0 style="border-radius: 5px;">
+                    <source src="videos/comparisons/dr_eureka_safety.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
+
+            <br>
+            <br>
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">    
+                        <p style="font-size: 125%">
+                            <b> DrEureka Reward-Aware Physics Prior.</b>Through extensive ablation studies, we find that using the initial Eureka policy to generate a reward-aware physics prior is crucial for the success of DrEureka.
+                            and then using LLM to sample DR parameters are critical for obtaining the best real-world performance.
+                         </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+            <div class="columns is-centered has-text-centered">
+                <video poster="videos/comparisons/dr_eureka_ablations.png" preload="none" id="" controls muted width="90%" playbackRate=2.0 style="border-radius: 5px;">
+                    <source src="videos/comparisons/dr_eureka_ablations.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
         </div>
-    </section>
+    </div>
+
+        </section>
 
 
    
