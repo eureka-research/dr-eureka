@@ -55,7 +55,7 @@
                                     <a target="_blank"
                                     href="https://www.linkedin.com/in/hungju-wang">Sam&#160;Wang</a><sup>1</sup>,
                                 <br>
-                                <a target="_blank" href="https://www.cs.utexas.edu/~yukez/">Yuke&#160;Zhu</a><sup>2</sup>,
+                                <a target="_blank" href="https://www.cs.utexas.edu/~yukez/">Yuke&#160;Zhu</a><sup>2,3</sup>,
                                 <a target="_blank" href="https://jimfan.me/">Linxi&#160;"Jim"&#160;Fan</a><sup>2</sup>,
 
                                 <a target="_blank"
@@ -143,6 +143,8 @@
             <div>
                 <video poster="" id="" autoplay controls muted loop width="100%" playbackRate=2.0 style="border-radius: 5px;">
                     <source src="videos/dreureka_teaser.mp4" type="video/mp4">
+                    <!-- <source src="videos/dreureka_teaser_compressed.mp4" type="video/mp4"> -->
+
                 </video>
             </div>
         </div>
@@ -165,6 +167,46 @@
         </div>
     </section>
     
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvima">DrEureka Components</span></h2>
+
+                        <!-- <img src="assets/images/eureka.png" class="interpolation-image" alt=""
+                            style="display: block; margin-left: auto; margin-right: auto" />
+                        <br> -->
+                        <div class="columns is-centered has-text-centered">
+                        <video poster="" id="" autoplay controls muted width="90%" playbackRate=2.0 style="border-radius: 5px;">
+                            <source src="videos/concept.mp4" type="video/mp4">
+                        </video>
+                        </div>
+                        <span style="font-size: 125%"><b>Overview.</b> DrEureka takes the task and safety instruction, along with environment source code, and runs Eureka to generate a regularized
+                            reward function and policy. Then, it tests the policy under different simulation conditions to build a reward-aware physics prior, which is
+                            provided to the LLM to generate a set of domain randomization (DR) parameters. Finally, using the synthesized reward and DR parameters,
+                            it trains policies for real-world deployment.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-2"><span class="dvima">Experiment Highlights</span></h2>
+                        <p style="font-size: 125%">
+                            In this section, we present the key qualitative results from our experiments, highlighting the robustness of DrEureka policies in the real-world yoga ball walking task as well as the 
+                            best DrEureka outputs for all our benchmark tasks. Detailed quantitative experiments and comparisons can be found in the paper.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="section">
         <div class="container is-max-widescreen">
@@ -180,33 +222,33 @@
             </div>
         </div>
         <!-- <div class="hero is-light is-small"> -->
-        <div>
+        <div class="container is-max-widescreen">
             <div class="hero-body">
                 <div class="container">
                     <div id="results-carousel" class="carousel results-carousel">
                         <div class="item">
-                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/gallery/C0014_walk_sideway.mp4" type="video/mp4">
+                            <video poster="videos/gallery/C0014_walk_sideway.png" preload="none" id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0014_walk_sideway_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="item">
-                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/gallery/C0014_height_obstacle.mp4" type="video/mp4">
+                            <video poster="videos/gallery/C0014_height_obstacle.png" preload="none"  id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0014_height_obstacle_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="item">
-                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/gallery/C0014_bridge.mp4" type="video/mp4">
+                            <video poster="videos/gallery/C0014_bridge.png" preload="none"  id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0014_bridge_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="item">
-                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/gallery/C0015_crossroad.mp4" type="video/mp4">
+                            <video poster="videos/gallery/C0015_crossroad.png" preload="none"  id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0015_crossroad_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="item">
-                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/gallery/C0013_upenn_grass_to_road2.mp4" type="video/mp4">
+                            <video poster="videos/gallery/C0013_upenn_grass_to_road2.png" preload="none"  id="" controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/gallery/C0013_upenn_grass_to_road2_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -224,28 +266,28 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="container is-max-widescreen">
             <div class="hero-body">
                 <div class="container">
                     <div id="results-carousel" class="carousel results-carousel">
                         <div class="item">
-                            <video poster="" id=""  controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/kick/C0020_clip1.mp4" type="video/mp4">
+                            <video poster="videos/kick/C0020_clip1.png" preload="none" id=""  controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/kick/C0020_clip1_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="item">
-                            <video poster="" id=""  controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/kick/C0021_clip1.mp4" type="video/mp4">
+                            <video poster="videos/kick/C0021_clip2.png" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/kick/C0021_clip2_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="item">
-                            <video poster="" id="" controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/kick/C0021_clip2.mp4" type="video/mp4">
+                            <video poster="videos/kick/C0021_clip1.png" preload="none" id=""  controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/kick/C0021_clip1_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="item">
-                            <video poster="" id=""  controls muted loop height="100%" playbackRate=2.0>
-                                <source src="videos/kick/C0020_clip2.mp4" type="video/mp4">
+                            <video poster="videos/kick/C0020_clip2.png" preload="none" id=""  controls muted loop height="100%" playbackRate=2.0>
+                                <source src="videos/kick/C0020_clip2_compressed.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -259,9 +301,9 @@
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">DrEureka Rewards, DR parameters, and Policies (TODO; Fix this section)</span></h2>
+                        <h2 class="title is-3"><span class="dvima">DrEureka Rewards, DR parameters, and Policies</span></h2>
                         <p style="font-size: 125%">
-                            In this demo, we visualize the unmodified best DrEureka reward and DR parameters
+                            We evaluate DrEureka on 3 tasks, quadruped globe walking, quadruped locomotion, and dexterous cube rotation. In this demo, we visualize the unmodified best DrEureka reward and DR parameters
                             for each
                             task and visualize the policy deployed in the training simulation environment as well as the real-world environment.
                         </p>
@@ -272,17 +314,17 @@
             <div class="columns" style="align-items: end;">
                 <div class="column is-one-fifths">
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="videos/tasks/walking_globe.png" width="50%" style="border-radius: 5px;" alt='<b>Walking Globe</b>, best DrEureka reward and DR parameters:
+                        <img src="videos/tasks/walking_globe.png" width="100%" style="border-radius: 5px;" alt='<b>Walking Globe</b>, best DrEureka reward and DR parameters:
                         [sep]
                         assets/reward_functions/walking_globe.txt [sep] assets/domain_randomizations/walking_globe.txt' onclick="populateDemo(this, 1);">
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="videos/tasks/cube_rotation.png" width="50%" style="border-radius: 5px;" alt='<b>Cube Rotation</b>, best DrEureka reward and DR parameters:
+                        <img src="videos/tasks/cube_rotation.png" width="100%" style="border-radius: 5px;" alt='<b>Cube Rotation</b>, best DrEureka reward and DR parameters:
                         [sep]
                         assets/reward_functions/cube_rotation.txt [sep] assets/domain_randomizations/cube_rotation.txt' onclick="populateDemo(this, 1);">  
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="videos/tasks/forward_locomotion.png" width="50%" style="border-radius: 5px;" alt='<b>Forward Locomotion</b>, best DrEureka reward and DR parameters:
+                        <img src="videos/tasks/forward_locomotion.png" width="100%" style="border-radius: 5px;" alt='<b>Forward Locomotion</b>, best DrEureka reward and DR parameters:
                         [sep]
                         assets/reward_functions/forward_locomotion.txt [sep] assets/domain_randomizations/forward_locomotion.txt' onclick="populateDemo(this, 1);">  
                     </div>
@@ -312,49 +354,42 @@
                 </div>
             </div>
         </div>
-        
-    </section>
-
-
-
-    <section class="section">
+        <br>
+        <br>
         <div class="container is-max-widescreen">
-            <div class="rows">
-                <div class="rows is-centered ">
-                    <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">DrEureka Components</span></h2>
 
-                        <!-- <img src="assets/images/eureka.png" class="interpolation-image" alt=""
-                            style="display: block; margin-left: auto; margin-right: auto" />
-                        <br> -->
-                        <div class="columns is-centered has-text-centered">
-                        <video poster="" id="" autoplay controls muted width="90%" playbackRate=2.0 style="border-radius: 5px;">
-                            <source src="videos/concept.mp4" type="video/mp4">
-                        </video>
-                        </div>
-                        <span style="font-size: 125%"><b>Overview.</b> DrEureka takes the task and safety instruction, along with environment source code, and runs Eureka to generate a regularized
-                            reward function and policy. Then, it tests the policy under different simulation conditions to build a reward-aware physics prior, which is
-                            provided to the LLM to generate a set of domain randomization (DR) parameters. Finally, using the synthesized reward and DR parameters,
-                            it trains policies for real-world deployment.</span>
-                    </div>
+        <div class="rows">
+            <div class="rows is-centered ">
+                <div class="row is-full-width">
+                    <p style="font-size: 125%">
+                       On the quadrupedal locomotion, we also systematically evaluate DrEureka policies on several real-world terrains and find they remain robust and outperform policies 
+                       trained using human-designed reward and DR configurations.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
-   
-
-
-
-    <section class="section">
-        <div class="container is-max-widescreen">
-            <div class="rows">
-                <div class="rows is-centered ">
-                    <div class="row is-full-width">
-                        <h2 class="title is-2"><span class="dvima">Experiments</span></h2>
-                        <p style="font-size: 125%">
-                            TODO.
-                        </p>
+        <br>
+        <br>
+        <div class="rows">
+            <div class="rows is-centered ">
+                <div class="columns">
+                    <div class="column has-text-centered">
+                        <img src="figures/quadruped_terrains.png" class="interpolation-image" alt=""
+                    style="display: block; width:89%; margin-left: auto; margin-right: auto" />
+                    <br>
+                    <span style="font-size: 125%">
+                        <span style="font-weight: bold">The default real-world environment as well as additional environments to test \ourmethod's robustness for quadrupedal locomotion.
+                    </span> 
                     </div>
+                    <div class="column has-text-centered">
+                        <img src="figures/real_world_robustness.png" class="interpolation-image" alt=""
+                        style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+
+                        <span style="font-size: 125%">
+                            <span style="font-weight: bold">DrEureka performs consistently across different terrains and maintains advantages over Human-Designed.
+                        </span>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
