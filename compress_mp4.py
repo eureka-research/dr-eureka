@@ -25,11 +25,11 @@ import subprocess
 # import subprocess
 
 # Set the path to the main folder
-main_folder = "/Users/jasonma/dreureka-website/videos/failures"
+main_folder = "/Users/jasonma/dreureka-website/videos"
 
 # Recursively iterate through all subfolders
 for root, dirs, files in os.walk(main_folder):
-    for filename in files:
+    for filename in ["/Users/jasonma/dreureka-website/videos/dreureka_teaser.mp4"]:
         # Check if the file has a .mp4 or .mov extension
         if filename.endswith(".mp4") or filename.endswith(".mov"):
             # Get the full path of the input file
@@ -42,7 +42,7 @@ for root, dirs, files in os.walk(main_folder):
             # Use FFmpeg to compress the video with more aggressive settings
             if filename.endswith(".mp4"):
                 # Compress MP4 files
-                subprocess.call(['ffmpeg', '-i', input_file, '-vcodec', 'libx264', '-preset', 'slow', '-crf', '28', '-acodec', 'aac', '-b:a', '64k', output_file])
+                subprocess.call(['ffmpeg', '-i', input_file, '-vcodec', 'libx264', '-preset', 'slow', '-crf', '37', '-acodec', 'aac', '-b:a', '64k', output_file])
             else:
                 # Convert MOV files to compressed MP4
                 subprocess.call(['ffmpeg', '-i', input_file, '-vcodec', 'libx264', '-preset', 'slow', '-crf', '28', '-acodec', 'aac', '-b:a', '64k', '-movflags', '+faststart', output_file])
